@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>MVP Finanças - Upload</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 40px;">
+    <h2>Upload de Extrato Bancário</h2>
+    <p>Envie o arquivo CSV exportado do seu banco para categorização automática.</p>
+    
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <button type="submit">Processar e Salvar no Banco</button>
+    </form>
+</body>
+</html>
